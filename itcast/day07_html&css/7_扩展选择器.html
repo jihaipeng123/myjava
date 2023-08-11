@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+       div p{
+            color: cyan;
+       }
+
+       div > p{
+           border:1px solid;
+       }
+
+       input[type="text"]{
+           border: 5px solid;
+       }
+
+       a:link{
+           color: red;
+       }
+       a:hover{
+           color: green;
+       }
+       a:active{
+           color: blue;
+       }
+       a:visited{
+           color: yellow;
+       }
+    </style>
+
+</head>
+<body>
+
+
+<!--3. 子选择器：筛选选择器1元素下的选择器2元素
+    语法：  选择器1 选择器2{}
+4. 父选择器：筛选选择器2的父元素选择器1
+    语法：  选择器1 > 选择器2{}
+5. 属性选择器：选择元素名称，属性名=属性值的元素
+	语法：  元素名称[属性名="属性值"]{}
+-->
+    <div>
+        <p>创制博客</p>
+    </div>
+    <p>会计法</p>
+
+    <div>内耦合</div>
+
+<input type="text" >
+<input type="password" >
+<br>
+
+<a href="#">虐ui绘画</a>
+
+</body>
+</html>

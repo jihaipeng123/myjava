@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day14_test:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day14_test_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day14_test" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/druid-1.0.9.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/mchange-commons-java-0.2.12.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/mysql-connector-java-5.1.37-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/spring-beans-5.0.0.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/spring-core-5.0.0.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/spring-jdbc-5.0.0.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/day05_dataSource_jdbcTemlate/libs/spring-tx-5.0.0.RELEASE.jar" />
+          <element id="library" level="module" name="commons-beanutils-1.8.0" module-name="day14_test" />
+          <element id="library" level="module" name="JUnit4" module-name="day14_test" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="day14_test/web/Web" />
+    </root>
+  </artifact>
+</component>

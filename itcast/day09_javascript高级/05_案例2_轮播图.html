@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+
+</head>
+<body>
+<!--//1.在页面上使用img标签展示图片
+//2.定义一个方法修改图片src属性
+//3.定义一个计时器，每隔3秒换一张图片-->
+<img id="img" src="img/banner_1.jpg" alt="" width="100%">
+<input type="button" id="back" value="后退">
+
+
+<script>
+    //2.定义一个方法修改图片src属性
+    var number = 1;
+    function fun(){
+        number++;
+        if(number>3){number=1;}
+        var img = document.getElementById("img");
+        img.src = "img/banner_"+number+".jpg";        /* ------------妙*/
+    }
+    ////3.定义一个计时器，每隔3秒换一张图片-->
+    setInterval(fun,3000);
+
+    var back = document.getElementById("back");
+    back.onclick=function(){
+        //后退一页
+        /*history.back();*/
+        history.go(-1)
+    }
+</script>
+
+</body>
+</html>

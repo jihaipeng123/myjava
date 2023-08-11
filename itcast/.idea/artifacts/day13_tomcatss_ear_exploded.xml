@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="day13_tomcatss:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day13_tomcatss_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day13_tomcatss/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="day13_tomcatss:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

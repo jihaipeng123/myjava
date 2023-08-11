@@ -1,0 +1,9 @@
+div{
+    color: #00ffff;
+}
+
+p{
+    color: red;
+/* 单位像素*/
+    font-size: 30px;
+}

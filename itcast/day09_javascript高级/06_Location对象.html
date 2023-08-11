@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location对象</title>
+
+</head>
+<body>
+
+<input type="button" id="btn" value="刷新">
+<input type="button" id="gotocast" value="去传智">
+
+<script>
+    //reload方法，定义一个按钮，点击按钮，刷新当前页面
+    //1.获取按钮
+    var btn = document.getElementById("btn");
+    //2.绑定单击事件
+    btn.onclick = function(){
+        //3刷新页面
+
+        location.reload();
+    }
+    //2.获取href
+    var href = Location.href ;
+    /*alert(href);*/
+
+
+    //点击按钮，去访问www.itcast.cn
+    //1.获取对象按钮
+    var gotocast=document.getElementById("gotocast");
+    //2.绑定单击事件
+    gotocast.onclick = function(){
+        //3点击按钮，去访问www.itcast.cn
+        location.href = "http://www.itcast.cn";
+    }
+    </script>
+
+</body>
+</html>

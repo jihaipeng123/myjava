@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node对象</title>
+    <style>
+        div{
+            border:1px red solid;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+        }
+        #div3{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div2">div2</div>
+    diva1
+</div>
+<!--<input type="button" id="de1" value="删除div1的子节点">-->
+<a href="javascript:void(0);" id="de1">删除div1的子节点</a>     <!-- 点完之后会刷新-->
+<a href="javascript:void(0);" id="add">添加div1的子节点</a>     <!-- 点完之后会刷新-->
+
+<!--
+超链接功能：
+        1可以被点击；不加href看不到超链接的样式
+        2.点击之后跳转到href指定的url
+      需求;  保留1功能，去掉2功能
+      实现： href="javascript:void(0);"
+-->
+
+
+<script>
+    //获取超链接
+    var element_a=document.getElementById("de1");
+    //绑定单机事件
+    element_a.onclick=function(){
+        var div1=document.getElementById("div1");
+        var div2=document.getElementById("div2");
+        div1.removeChild(div2);
+
+    }
+
+    //获取超链接
+    var add=document.getElementById("add");
+    //绑定单机事件
+    add.onclick=function(){
+        var div1=document.getElementById("div1");
+        //创建div3节点
+       var div3= document.createElement("div");
+        div3.setAttribute("id","div3");
+        div1.appendChild(div3);
+    }
+
+    var div2=document.getElementById("div2");
+    var div1 =div2.parentNode;
+    alert(div1);
+
+</script>
+
+</body>
+</html>
+

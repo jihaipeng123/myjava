@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+
+
+
+</head>
+<body>
+
+<input id="openBtn" type="button" value="打开窗口"></input>
+<input id="closeBtn" type="button" value="关闭窗口"></input>
+
+
+<script>
+    /*alert("hello");
+    window.alert("哈哈哈哈");
+     var flag = confirm("您确定退出吗？");
+    /!* alert(flag);*!/
+    if(flag){
+        //退出操作
+        alert("欢饮下次光临");
+    }else{
+        //提示：手别抖。。。。
+        alert("手别抖");
+    }
+*/
+    /*//输入框
+    var result = prompt("请输入用户名");
+    alert(result);*/
+
+    var openBtn = document.getElementById("openBtn");
+    var newwindow;
+    openBtn.onclick = function(){
+        //打开新窗口
+        newwindow=open("https://www.baidu.com");
+    }
+
+    var closeBtn = document.getElementById("closeBtn");
+    closeBtn.onclick = function(){
+        //关闭当前窗口
+        /*window.close();*/
+        newwindow.close();
+    }
+
+    //一次性定时器及取消   等待时间2秒
+    /*var id= setTimeout(fun,2000);
+    clearTimeout(id);
+    function  fun(){
+        alert('boom~~~')
+    }*/
+    //循环定时器及取消
+    /* var id2 = setInterval(fun,2000)*/
+    /*clearInterval(id2);*/
+
+    //获取history
+    var h1 = window.history;
+    var h2 = history;
+    alert(h1);
+    alert(h2);
+</script>
+
+</body>
+</html>
